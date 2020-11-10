@@ -1,7 +1,3 @@
-document.getElementById("selector").addEventListener("click", () => {
-    getGeoloc()
-});
-
 function getGeoloc (){
     if ('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(position => {
@@ -18,5 +14,8 @@ function getGeoloc (){
         fetch('/geoloc', options)
       });
 } else {
-    alert('please alow geolocation');
+    alert('please allow geolocation');
 }};
+
+
+export {getGeoloc};

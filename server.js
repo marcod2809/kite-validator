@@ -5,14 +5,14 @@ var app = express();
 app.use(express.static('public'))
 app.use(express.json())
 
+// get F-O datas
 app.post('/geoloc', (request, response) => {
     const userlat = request.body.lat
     const userlong = request.body.lon
-    console.log(request.body)
     getCurrentWeather(userlat, userlong)
 })
 
-
+// Fetch weather datas
 async function getCurrentWeather (userlat, userlong){
     try {
         const response = await got ('https://jsonplaceholder.typicode.com/todos/1')
@@ -26,13 +26,5 @@ async function getCurrentWeather (userlat, userlong){
 // start the server in the port 3000 !
 app.listen(3000, () => {
     console.log('app listening on port 3000.');
-});
+}); 
 
-/*
-spots = {wissant : {
-lat : ,
-long : ,
-min wind orientation degree : ,
-max : 
-spot dangerousity :
-}}*/

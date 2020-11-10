@@ -1,0 +1,26 @@
+{
+  "name": "kite-validator",
+  "version": "1.0.0",
+  "description": "a simple tool",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "got": "^11.7.0",
+    "bootstrap": "^4.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcod2809/kite-validator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcod2809/kite-validator/issues"
+  },
+  "homepage": "https://github.com/marcod2809/kite-validator#readme"
+}
