@@ -2,11 +2,12 @@
   "name": "kite-validator",
   "version": "1.0.0",
   "description": "a simple tool",
-  "main": "main.js",
+  "main": "index.js",
   "dependencies": {
+    "bootstrap": "^4.5.2",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "got": "^11.7.0",
-    "bootstrap": "^4.5.2"
+    "got": "^11.7.0"
   },
   "devDependencies": {},
   "scripts": {
