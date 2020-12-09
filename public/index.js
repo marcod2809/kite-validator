@@ -1,6 +1,5 @@
 fetch('/weather')
-//convert respon
-.then((response) => { return response.json(); })
+.then((response) => {return response.json(); })
 .then((data) => {
     var div1 = document.createElement("div")
     var div2 = document.createElement("div")
@@ -16,3 +15,6 @@ fetch('/weather')
     document.body.appendChild(div1); 
     document.body.appendChild(div2); 
     console.log(data)})
+.catch(error => {
+     console.error(error)
+});

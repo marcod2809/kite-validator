@@ -4,7 +4,6 @@
   "description": "a simple tool",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.5.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "got": "^11.7.0"
