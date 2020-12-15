@@ -15,7 +15,7 @@ app.get('/weather', async (request, response) => {
     let windCriterion = windSpeedEvaluator(windSpeed)
     let orientationCriterion = orientationEvaluator(weather.current.wind_deg)
     let rideScoring = overallRideScoring(windCriterion, orientationCriterion)
-    response.json({temperature: weather.current.temp, windSpeed: windSpeed, windCriterion : windCriterion, orientationCriterion : orientationCriterion, overallRideScoring : rideScoring})    
+    response.json({temperature: weather.current.temp, windSpeed: windSpeed, windCriterion: windCriterion, orientationCriterion: orientationCriterion, overallRideScoring: rideScoring})    
 });
 
 
@@ -47,6 +47,5 @@ function overallRideScoring(windCriterion, orientationCriterion){
     }
 }
 
-// start the server in the port 3000 !
 app.listen(process.env.PORT, () => {console.log('app listening on port ' + process.env.PORT);}); 
 
