@@ -24,7 +24,7 @@ function knotsConvertor(wind_speed){
 }
 
 function windSpeedEvaluator(windSpeed){
-    if(windSpeed > 15){
+    if(windSpeed > 15 && windSpeed < 35){
         return true
     } else {
         return false
