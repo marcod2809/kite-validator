@@ -6,11 +6,22 @@
 </head>
 <body>
 	<h1>Est ce qu'on va rider aujourd'hui ?</h1>
-	<img id="illustration"></img>
-	<p id="contextSentence">No !</p>
+	<label></label>
+	<select name='spotselector' onchange='submit(value)'>
+		<option selected disabled hidden>Select your spot</option>
+		<option value='wissant'>Wissant</option>
+		<option value='wimereux'>Wimereux</option>
+		<option value='le touquet'>Le touquet</option>
+	</select>
+
+
+
+	<div><img id="illustration"></img></div>
+	<p id="contextSentence"></p>
 	<h2><div id="windspeed"></div></h2>
+	<h2><div id="orientation"></div></h2>
 	<h2><div id="outsidetemp"></div></h2>
 	<a href="https://twitter.com/intent/tweet?text=Est-ce+qu%27on+va+rider+aujourd%27hui+%3f%20https://estcequonvarideraujourdhui.glitch.me/+de+@marcod2809">* @tweet *</a>
 </body>
-<script type="module" src="index.js"></script>
+<script src="index.js"></script>
 </html>

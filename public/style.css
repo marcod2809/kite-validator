@@ -1,16 +1,8 @@
-body
-{
-    text-align: center;
+body {
+  text-align: center;
 }
 
-h2
-{
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-weight: lighter;
+h2 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: lighter;
 }
-
-a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-    text-decoration: underline;
-  }
